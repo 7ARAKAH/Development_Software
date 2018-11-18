@@ -8,4 +8,4 @@ num2 = int(input("enter num 2: "))
 sum = num1 + num2
 
 # show the result
-printdd("sum = " + str(sum))
+print("sum = " + str(sum))
