@@ -1,10 +1,17 @@
-#Hello, this is my first Python test script.
+# Python Object-Oriented Programming
 
-Var1 = float(input("Enter first number: "))
-Var2 = float(input("Enter second number: "))
-Var3 = float(input("Enter third number: "))
+class Employee:
+    
+    def __init__(self, first, last, email, pay):
+        self.first = first
+        self.last = last
+        self.email = email
+        self.pay = pay
 
-print("Adding these two numbers gives us: ", Var1 + Var2 + Var3)
+    def fullname(self):
+        return '{} {}'.format(self.first, self.last)
 
-for i in range(1, 3):
-    print("Hello")
+emp1 = Employee('Hany', 'AbuShall', 'abushall@hany.space', 55000)
+emp2 = Employee('Katherine', 'Haenschen', 'keh303@gmail.com', 67000)
+
+print(emp2.fullname())
